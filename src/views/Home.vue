@@ -1,18 +1,25 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <h2>States</h2>
+    <div>
+      <ul v-for="state in stateList" :key="state.id">
+        <router-link :to="`/state-detail/${state.id}`">
+          <li>{{ state.name }}</li>
+        </router-link>
+      </ul>
+    </div>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+
 
 export default {
-  name: 'Home',
-  components: {
-    HelloWorld
-  }
-}
+
+  data() {
+    return {
+      stateList: this.$store.state.stateList
+    };
+  },
+};
 </script>
