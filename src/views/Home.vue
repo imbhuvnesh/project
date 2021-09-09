@@ -12,13 +12,10 @@
 </template>
 
 <script>
-
-
 export default {
-
   data() {
     return {
-      stateList: this.$store.state.stateList
+      stateList: this.$store.state.stateList,
     };
   },
 };

@@ -1,6 +1,7 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 import Home from '../views/Home.vue'
 import StateDetail from '../views/StateDetail.vue';
+import SubregionDetail from '../components/SubregionDetail.vue';
 
 const routes = [
   {
@@ -12,6 +13,11 @@ const routes = [
     path: '/state-detail/:id',
     name: 'StateDetail',
     component: StateDetail
+  },
+  {
+    path: '/subregion-detail/:id/:name',
+    name: 'SubregionDetail',
+    component: SubregionDetail
   }
 ]
 

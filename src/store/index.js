@@ -8,6 +8,20 @@ export default createStore({
         name: "West Bengal",
         info:
           "West Bengal comprises of four Agro Ecological Regions (AER) namely 12, 15, 16 and  18. ",
+        regions: [
+          {
+            name: "Agro-Eco Region 12", info: "AER 12 in West Bengal comprises of Bankura and Puruliya districts of Chhotanagpur Plateau under Agro Ecological Sub Regions (AESR) 12.3. ",
+            subregions: [
+              { name: "AESR 12.3", info: "The region is hot, dry subhumid climate ESR with moderately deep to deep loamy to clayey Red and Lateritic soils, medium AWC and LGP of 150-180 days in a year. The area receives an annual rainfall of 1000-1600 mm which covers about 80 per cent of the PET leaving deficit of 500 to 700 mm of water per year. The water balance shows a prolonged dry period from December to May (more than 90 days in a year). As such the area, in general, qualifies for Typic Ustic soil moisture regime. The mean annual soil temperature of more than 22oC qualifies the area for hyperthermic soil temperature regime." },
+            ]
+          },
+          {
+            name: "Agro-Eco Region 15", info: "The AER 15 in West Bengal comes under Agro Ecological Sub Regions (AESR) 15.1 and 15.3.",
+            subregions: [
+              { name: "AESR 15.1", info: "The  AESR 15.1  comprising of Bardaman, Birbhum, Dakshin Dinajpur, Haora, Hugli, Malda, Mursidabad, Nadia, North 24 Pragana, Pashchim Medinipur and Uttar_Dinajpur districts of Bengal basin. The region hot moist subhumid ESR with deep loamy to clayey alluvium-derived soils, medium to high AWC and LGP 210-240 days. The rainfall in Ganga Plain ranges between 1400 and 1600 mm. The water balance shows that P exceeds PET from June to October followed by a period of utilization till mid-February in most of the years. The SMCS remains partly dry for as long as 90 cumulative days qualifying the area for udic-ustic soil moisture regime and Hyperthermic temperature regimes" },
+            ]
+          },
+        ]
       },
       {
         id: 2,
@@ -21,7 +35,8 @@ export default createStore({
   actions: {},
   modules: {},
   getters: {
-    getStates() {
+    getStates()
+    {
       return this.state.stateList;
     },
   },
