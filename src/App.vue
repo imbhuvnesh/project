@@ -8,20 +8,21 @@
 * {
   box-sizing: border-box;
 }
-.app{
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+.app {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-li{
+li {
   list-style: none;
 }
 
-a{
- text-decoration: none;
- color: inherit;
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
-a:hover{
+a:hover {
   text-decoration: underline;
 }
 </style>

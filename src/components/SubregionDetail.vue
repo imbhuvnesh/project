@@ -1,5 +1,5 @@
 <template>
-  <div>hello ji!</div>
+  <div>{{subregion.name}}</div>
 </template>
 
 <script>
@@ -14,13 +14,8 @@ export default {
   mounted(){
       const name = this.$route.params.name;
       const id = this.$route.params.stateId;
-      const state = this.$store.state.stateList[id];
-      for(let subrgn in state.regions.subregions){
-          if(subrgn.name === name){
-              this.subregion = subrgn;
-          }
-      }
-    console.log(this.subregion);
+      
+      this.subregion = {name, id}
   }
 };
 </script>
